@@ -28,7 +28,7 @@ Examples:
 
 Scenario: Invalid user login
 Given user is on saucedemo homepage
-When user enters username "username1"
-And user enters password "password1"
+When user enters username "David"
+And user enters password "password7"
 And user clicks login
 Then user is shown an error
