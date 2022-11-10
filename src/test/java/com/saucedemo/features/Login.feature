@@ -29,6 +29,6 @@ Examples:
 Scenario: Valid user login with locked out user
 Given user is on saucedemo homepage
 When user enters username "James_Eng"
-And user enters password  "123456"
+And user enters password  "12345"
 And user clicks login
 Then user is shown an error
