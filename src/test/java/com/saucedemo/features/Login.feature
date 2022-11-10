@@ -26,14 +26,9 @@ Examples:
 |username2|password2|
 |username4|password4|
 
-Scenario Outline: Invalid user logins
+Scenario: Invalid user logins
 Given user is on saucedemo homepage
-When user enters username "<omair>"
-And user enters password "<12345>"
+When user enters username "omair"
+And user enters password "12345"
 And user clicks login
 Then user is shown an error
-Examples:
-|username|password|
-|username1|password1|
-|username3|password3|
-|username5|password5|
