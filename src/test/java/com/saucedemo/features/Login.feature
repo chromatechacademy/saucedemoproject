@@ -35,7 +35,11 @@ Examples:
 |username1|password1|
 |username2|password2|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |username3|password3|
 =======
 |username3|password3|
 >>>>>>> 259fb4106d0187291e0571d138c2bb2a34e82936
+=======
+|username4|password4|
+>>>>>>> 4cca057dcc2a07b7b227247b1023afa569e41893
