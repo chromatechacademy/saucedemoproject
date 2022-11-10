@@ -24,6 +24,7 @@ Examples:
 |username|password|
 |username1|password1|
 |username2|password2|
+
 |username3|password3|
 
 Scenario: Valid user login with locked out user
@@ -32,3 +33,28 @@ When user enters username "Luis"
 And user enters password  "123456"
 And user clicks login
 Then user is logged in
+
+|username4|password4|
+
+Scenario: Valid user login with locked out user
+Given user is on saucedemo homepage
+When user enters username "sergey"
+And user enters password  "12345"
+And user clicks login 
+Then user is logged in
+
+When user enters username "Arthur"
+And user enters password  "12345"
+And user clicks login
+Then user is logged in
+
+Scenario: Invalid user login
+Given user is on saucedemo homepage
+When user enters username "Ayla"
+And user enters password "12345"
+And user clicks login
+Then user is shown an error
+
+
+
+
