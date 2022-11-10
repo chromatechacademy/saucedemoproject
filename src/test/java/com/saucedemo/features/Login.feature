@@ -40,8 +40,8 @@ Then user is logged in
 
 Scenario: Invalid user login
 Given user is on saucedemo homepage
-When user enters username "<Ayla>"
-And user enters password "<12345>"
+When user enters username "Ayla"
+And user enters password "12345"
 And user clicks login
 Then user is shown an error
 
