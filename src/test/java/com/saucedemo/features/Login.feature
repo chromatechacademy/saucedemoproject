@@ -24,17 +24,18 @@ Examples:
 |username|password|
 |username1|password1|
 |username2|password2|
-
 |username3|password3|
+|username4|password4|
 
-Scenario: Valid user login with locked out user
+
+Scenario: Invalid user login with Luis 
 Given user is on saucedemo homepage
 When user enters username "Luis"
 And user enters password  "123456"
 And user clicks login
 Then user is logged in
 
-|username4|password4|
+
 
 Scenario: Invalid user logs with Sebastian
 Given user is on saucedemo homepage
