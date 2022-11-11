@@ -28,6 +28,13 @@ Feature: Login
       | username3 | password3 |
       | username4 | password4 |
 
+  Scenario: Invalid user login with David
+    Given user is on saucedemo homepage
+    When user enters username "David"
+    And user enters password "password7"
+    And user clicks login
+    Then user is shown an error
+
   Scenario: Invalid user login with Ruth
     Given user is on saucedemo homepage
     When user enters username "Ruth"
