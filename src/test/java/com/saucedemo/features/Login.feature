@@ -28,6 +28,18 @@ Examples:
 |username4|password4|
 
 
+
+Scenario: Invalid user logs in Valeriia
+Given user is on saucedemo homepage
+When user enters username "Valeriia"
+And user enters password  "12345"
+And user clicks login
+Then user is shown an error
+
+
+
+
+
 Scenario: Invalid user login with Daniela
 Given user is on saucedemo homepage
 When user enters username "daniela_comanici"
@@ -108,6 +120,7 @@ When user enters username "Reshad"
 And user enters password "12345"
 And user clicks login
 Then user is shown an error
+
 
 
 
