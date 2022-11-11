@@ -26,14 +26,13 @@ Examples:
 |username2|password2|
 |username4|password4|
 
-<<<<<<< HEAD
 Scenario: Invalid user logs in
 Given user is on saucedemo homepage
 When user enters username "<Tibu23>"
 And user enters password "12345"
 And user clicks login
 Then user is shown an error
-=======
+
 Scenario: Invalid user login with James_Eng
 Given user is on saucedemo homepage
 When user enters username "James_Eng"
@@ -62,4 +61,4 @@ And user clicks login
 Then user is shown an error
 
 
->>>>>>> 4b9513af64745b59e48fb88096fe35a1e1294201
+
