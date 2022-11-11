@@ -28,7 +28,6 @@ Examples:
 |username4|password4|
 
 
-<<<<<<< HEAD
 Scenario: Invalid user login with Mila 
 Given user is on saucedemo homepage
 When user enters username "zimaxleto"
@@ -36,7 +35,6 @@ And user enters password  "12345"
 And user clicks login 
 Then user is logged in
 
-=======
 Scenario: Invalid user login with Luis 
 Given user is on saucedemo homepage
 When user enters username "Luis"
@@ -45,7 +43,6 @@ And user clicks login
 Then user is logged in
 
 
->>>>>>> d3bb9d53b7942976ce3dfbd81ca2086fd801a89b
 Scenario: Invalid user logs with Sebastian
 Given user is on saucedemo homepage
 When user enters username "Tibu23"
