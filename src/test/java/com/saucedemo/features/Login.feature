@@ -26,7 +26,7 @@ Examples:
 |username2|password2|
 |username4|password4|
 
-Scenario: Invalid user logs in
+Scenario: Invalid user logs in Valeriia
 Given user is on saucedemo homepage
 When user enters username "<username>"
 And user enters password  "12345"
