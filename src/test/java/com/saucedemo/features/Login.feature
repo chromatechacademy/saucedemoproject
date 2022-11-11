@@ -125,10 +125,12 @@ Feature: Login
         And user clicks login
         Then user is shown an error
 
-
-
-
-
+    Scenario: invalid user login
+        Given user is on saucedemo homepage
+        When user enters username "Hayk"
+        And user enters password "12345678"
+        And user clicks login
+        Then user is shown an error
 
 
 
