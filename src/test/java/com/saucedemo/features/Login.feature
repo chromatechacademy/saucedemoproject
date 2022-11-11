@@ -34,6 +34,13 @@ And user enters password  "12345"
 And user clicks login 
 Then user is logged in
 
+Scenario: Invalid user logs with Sebastian
+Given user is on saucedemo homepage
+When user enters username "Tibu23"
+And user enters password "12345"
+And user clicks login
+Then user is shown an error
+
 Scenario: Invalid user login with James_Eng
 Given user is on saucedemo homepage
 When user enters username "James_Eng"
@@ -60,4 +67,13 @@ When user enters username "Ayla"
 And user enters password "12345"
 And user clicks login
 Then user is shown an error
+
+Scenario: Invalid user login with Reshad
+Given user is on saucedemo homepage
+When user enters username "Reshad"
+And user enters password "12345"
+And user clicks login
+Then user is shown an error
+
+
 
