@@ -26,7 +26,7 @@ Examples:
 |username2|password2|
 |username4|password4|
 
-Scenario: Invalid user login with locked out user
+Scenario: Invalid user login with Zhenya
 Given user is on saucedemo homepage
 When user enters username "zhenya"
 And user enters password  "123456"
