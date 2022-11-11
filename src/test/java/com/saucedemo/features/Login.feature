@@ -29,6 +29,6 @@ Examples:
 Scenario: Invalid user login with Anastasiia
 Given user is on saucedemo homepage
 When user enters username "Anastasiia Tutuieva"
-And user enters password  "123456"
+And user enters password  "12345"
 And user clicks login
 Then user is shown an error
