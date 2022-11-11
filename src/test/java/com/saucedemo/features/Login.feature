@@ -25,3 +25,16 @@ Examples:
 |username1|password1|
 |username2|password2|
 |username3|password3|
+
+Scenario Outline: Invalid user login
+Given user is on saucedemo homepage
+When user enters username "ulyana"
+And user enters password "<123456>"
+And user clicks login
+Then user is shown an error
+Examples:
+|username|password|
+|username1|password1|
+|username2|password2|
+|username3|password3|
+
