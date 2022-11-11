@@ -38,7 +38,7 @@ Given user is on saucedemo homepage
 When user enters username "sergey"
 And user enters password  "12345"
 And user clicks login 
-Then user is logged in
+Then user is shown an error
 
 Scenario: Invalid user login with Arthur
 When user enters username "Arthur"
@@ -48,9 +48,8 @@ Then user is shown an error
 
 Scenario: Invalid user login with Ayla
 Given user is on saucedemo homepage
-When user enters username "<Ayla>"
-And user enters password "<12345>"
+When user enters username "Ayla"
+And user enters password "12345"
 And user clicks login
 Then user is shown an error
-
 
