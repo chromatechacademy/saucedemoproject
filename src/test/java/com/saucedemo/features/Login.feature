@@ -27,7 +27,7 @@ Examples:
 |username4|password4|
 
 
-Scenario: Valid user login with standard user
+Scenario: Invalid user login with Mila 
 Given user is on saucedemo homepage
 When user enters username "zimaxleto"
 And user enters password  "123456"
@@ -62,4 +62,4 @@ And user clicks login
 Then user is shown an error
 
 
->>>>>>> 4b9513af64745b59e48fb88096fe35a1e1294201
+
