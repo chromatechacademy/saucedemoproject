@@ -1,5 +1,6 @@
 Feature: Login
 
+    @Smoke
     Scenario: Valid user login with standard user
         Given user is on saucedemo homepage
         When user enters username "standard_user"
@@ -7,6 +8,7 @@ Feature: Login
         And user clicks login
         Then user is logged in
 
+    @Smoke
     Scenario: Valid user login with locked out user
         Given user is on saucedemo homepage
         When user enters username "locked_out_user"
@@ -14,6 +16,7 @@ Feature: Login
         And user clicks login
         Then user is logged in
 
+    @Regression
     Scenario Outline: Invalid user logins
         Given user is on saucedemo homepage
         When user enters username "<username>"
