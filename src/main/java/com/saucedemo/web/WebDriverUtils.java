@@ -2,8 +2,10 @@ package com.saucedemo.web;
 
 import java.time.Duration;
 
+import org.codehaus.plexus.util.Os;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -22,6 +24,7 @@ public class WebDriverUtils {
         ConfigReader.readProperties(FrameworkConstants.CONFIGURATION_FILEPATH);
 
         String osName = FrameworkConstants.GET_OS_NAME;
+        System.out.println("OS Name:" + osName);
 
         if (ConfigReader.getPropertyValue("browser").equalsIgnoreCase("chrome")) {
 
@@ -40,6 +43,7 @@ public class WebDriverUtils {
             } else if (osName.contains("Linux")) {
                 WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
                 driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions(); 
                 driver.manage().window().maximize();
                 driver.manage().deleteAllCookies();
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
