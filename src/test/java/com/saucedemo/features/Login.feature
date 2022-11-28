@@ -162,3 +162,10 @@ Feature: Login
         And user clicks login
         Then user is shown an error
 
+    Scenario: invalid user login with Joyce
+        Given user is on saucedemo homepage
+        When user enters username "Joyce"
+        And user enters password "1234567"
+        And user clicks login
+        Then user is shown an error
+
